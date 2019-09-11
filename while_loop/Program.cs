@@ -6,10 +6,9 @@ namespace while_loop
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
             try
             {
-                Console.WriteLine("Enter Experience");
+                Console.WriteLine("Enter the years of Experience");
                 string years = Console.ReadLine();
                 int year_of_exp = Int32.Parse(years);
                 while(year_of_exp > 0)
@@ -20,7 +19,7 @@ namespace while_loop
                 }
 
             }
-            catch(InvalidCastException)
+            catch(Exception)
             {
                 Console.WriteLine("Enter Valid Years of Experience");
             }
